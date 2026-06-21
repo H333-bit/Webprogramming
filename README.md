@@ -40,4 +40,23 @@ customer123
 docker compose down -v
 docker compose up --build
 ```
-# Webprogramming
+
+
+---
+
+## Updated Product Categories
+
+This version includes additional products in every category:
+
+- Women
+- Men
+- Accessories
+
+If you already ran the old version before, MongoDB may still contain the old seeded data in the Docker volume. To load the new products, reset the database once:
+
+```bash
+docker compose down -v
+docker compose up --build
+```
+
+This removes the old MongoDB volume and reseeds the database with the updated products.
